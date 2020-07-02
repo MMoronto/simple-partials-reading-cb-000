@@ -856,3 +856,12 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts/new" for 76.124.168.60 at 2020-07-02 20:05:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.3ms)
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 357ms (Views: 345.5ms | ActiveRecord: 0.6ms)
+
+
