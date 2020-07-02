@@ -865,3 +865,15 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 357ms (Views: 345.5ms | ActiveRecord: 0.6ms)
 
 
+Started POST "/posts" for 76.124.168.60 at 2020-07-02 20:05:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jtogpdv7Q75chG4B0dzb//HujXMhyUFCsAD3Gh88qi/zXT1WPxP0hVzs3KdRwENF8C82enSuB/M4oDOJFqRaUg==", "title"=>"FI FI FO FUM!!", "description"=>"jack and the stalky bean", "commit"=>"Submit Post"}
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" ORDER BY "authors"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "FI FI FO FUM!!"], ["description", "jack and the stalky bean"], ["created_at", "2020-07-02 20:05:55.381933"], ["updated_at", "2020-07-02 20:05:55.381933"], ["author_id", 1]]
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://67.205.130.239:38783/posts/17
+Completed 302 Found in 28ms (ActiveRecord: 8.1ms)
+
+
